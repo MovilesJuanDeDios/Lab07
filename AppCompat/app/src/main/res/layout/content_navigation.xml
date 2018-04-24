@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="10">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:background="@drawable/background"
-        android:weightSum="10"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_weight="2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-
-        </RelativeLayout>
-
-        <GridLayout
+        <android.support.v7.widget.GridLayout
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
-            android:layout_height="27dp"
+            android:layout_height="100dp"
             android:layout_weight="8"
-            android:alignmentMode="alignMargins"
-            android:columnCount="2"
-            android:columnOrderPreserved="false"
+            android:layout_marginTop="80dp"
             android:padding="14dp"
-            android:rowCount="3">
+            app:alignmentMode="alignMargins"
+            app:columnCount="2"
+            app:columnOrderPreserved="false"
+            app:rowCount="3">
 
             <!-- Row 1 -->
 
@@ -36,63 +26,14 @@
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_columnWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
-                app:cardBackgroundColor="@color/colorBackground2">
-
-                <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:background="@color/colorBackground2"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="140dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/lennon" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="John Lennon"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Guitar/Voice"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <!-- Column 2 -->
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp"
-                app:cardBackgroundColor="@color/colorBackground2">
+                app:cardBackgroundColor="@color/colorBackground2"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
 
                 <LinearLayout
                     android:layout_width="140dp"
@@ -106,7 +47,62 @@
                         android:layout_width="140dp"
                         android:layout_height="150dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/paul" />
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/lennon"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="John Lennon"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guitar/Voice"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/colorBackground2"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:background="@color/colorBackground2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/paul"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -114,7 +110,7 @@
                         android:text="Paul McCartney"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -123,7 +119,7 @@
                         android:text="Bass/Voice"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -137,14 +133,14 @@
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_columnWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
-                app:cardBackgroundColor="@color/colorBackground2">
+                app:cardBackgroundColor="@color/colorBackground2"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
 
                 <LinearLayout
                     android:layout_width="150dp"
@@ -158,7 +154,10 @@
                         android:layout_width="140dp"
                         android:layout_height="150dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/george" />
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/george"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -166,7 +165,7 @@
                         android:text="George Harrison"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -175,7 +174,7 @@
                         android:text="Guitar/Voice"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -186,14 +185,14 @@
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_columnWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
-                app:cardBackgroundColor="@color/colorBackground2">
+                app:cardBackgroundColor="@color/colorBackground2"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
 
                 <LinearLayout
                     android:layout_width="140dp"
@@ -207,7 +206,10 @@
                         android:layout_width="140dp"
                         android:layout_height="150dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ringo" />
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/ringo"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -215,7 +217,7 @@
                         android:text="Ringo Starr"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -224,15 +226,15 @@
                         android:text="Drums"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-        </GridLayout>
+        </android.support.v7.widget.GridLayout>
 
     </LinearLayout>
 
-</RelativeLayout>
+

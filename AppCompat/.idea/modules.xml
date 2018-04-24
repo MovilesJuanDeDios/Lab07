@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AppCompat.iml" filepath="$PROJECT_DIR$/AppCompat.iml" />
-      <module fileurl="file://C:\Users\casca\Documents\GitHub\LabPresentacion\AppCompat\Lab05.iml" filepath="C:\Users\casca\Documents\GitHub\LabPresentacion\AppCompat\Lab05.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

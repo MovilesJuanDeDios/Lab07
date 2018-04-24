@@ -20,7 +20,8 @@
                 android:id="@+id/imagen"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/album"
@@ -30,7 +31,9 @@
                 android:layout_toRightOf="@id/imagen"
                 android:text="Please Please Me"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/imagen" />
 
             <TextView
                 android:id="@+id/artista"
@@ -42,7 +45,9 @@
                 android:layout_toRightOf="@id/imagen"
                 android:text="The Beatles"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/imagen" />
 
             <TextView
                 android:id="@+id/anio"
