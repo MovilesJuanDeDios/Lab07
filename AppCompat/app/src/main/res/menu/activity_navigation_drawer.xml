@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Acerca de:">
+        <menu>
+            <item
+                android:id="@+id/discografia"
+                android:icon="@drawable/ic_music_icon"
+                android:title="Discografia" />
+            <item
+                android:id="@+id/canciones"
+                android:icon="@drawable/ic_library_music_black_24dp"
+                android:title="Canciones" />
+        </menu>
+    </item>
+
+</menu>

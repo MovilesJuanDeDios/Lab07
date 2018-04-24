@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">The Beatles</string>
+
+    <!-- Names of the activities -->
+    <string name="title_activity_navigation">The Beatles</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_discografia">Discografia</string>
+    <string name="title_activity_video">Video</string>
+    <string name="title_activity_canciones">Canciones</string>
+
+</resources>
