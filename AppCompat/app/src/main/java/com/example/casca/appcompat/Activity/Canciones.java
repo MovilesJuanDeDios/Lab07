@@ -92,7 +92,7 @@ public class Canciones extends AppCompatActivity {
                 new Cancion(
                         "The Beatles",
                         "Sgt.Pepp. Lon. Hearts",
-                        "Sgt. Pepper´s Lonely Hearts Club Band",
+                        "Sgt. Pepp. Lon. Hearts Club Band",
                         R.drawable.sgt_pepper,
                         R.raw.twist
                 ));
