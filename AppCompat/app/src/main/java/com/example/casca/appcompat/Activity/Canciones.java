@@ -46,15 +46,15 @@ public class Canciones extends AppCompatActivity {
                         "All my loving",
                         "With The Beatles",
                         R.drawable.with,
-                        R.raw.allmy
+                        R.raw.all
                 ));
         cancionList.add(
                 new Cancion(
                         "The Beatles",
-                        "A Hard Day´s Night",
+                        "Can't Buy Me Love",
                         "A Hard Day´s Night ",
                         R.drawable.hard,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -62,7 +62,7 @@ public class Canciones extends AppCompatActivity {
                         "Eight Days a Week",
                         "Beatles for Sale",
                         R.drawable.sale,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -70,7 +70,7 @@ public class Canciones extends AppCompatActivity {
                         "Help!",
                         "Help!",
                         R.drawable.help,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -78,7 +78,7 @@ public class Canciones extends AppCompatActivity {
                         "I,ve Just Seen a Face",
                         "Rubber Soul",
                         R.drawable.rubber,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -86,7 +86,7 @@ public class Canciones extends AppCompatActivity {
                         "Eleanor Rigby",
                         "Revolver",
                         R.drawable.revolver,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -94,7 +94,7 @@ public class Canciones extends AppCompatActivity {
                         "Sgt.Pepp. Lon. Hearts",
                         "Sgt. Pepp. Lon. Hearts Club Band",
                         R.drawable.sgt_pepper,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -102,7 +102,7 @@ public class Canciones extends AppCompatActivity {
                         "Penny Lane",
                         "Magical Mystery Tour",
                         R.drawable.magical,
-                        R.raw.twist
+                        0
                 ));
         cancionList.add(
                 new Cancion(
@@ -110,15 +110,15 @@ public class Canciones extends AppCompatActivity {
                         "Blackbird",
                         "THE BEATLES",
                         R.drawable.white,
-                        R.raw.twist
+                        1
                 ));
         cancionList.add(
                 new Cancion(
                         "The Beatles",
-                        "All You Need Is Love",
+                        "Yellow Submarine",
                         "Yellow Submarine",
                         R.drawable.yellow,
-                        R.raw.twist
+                        R.raw.yellow
                 ));
         cancionList.add(
                 new Cancion(
@@ -126,7 +126,7 @@ public class Canciones extends AppCompatActivity {
                         "Something",
                         "Abbey Road",
                         R.drawable.road,
-                        R.raw.twist
+                        2
                 ));
         cancionList.add(
                 new Cancion(
@@ -134,7 +134,7 @@ public class Canciones extends AppCompatActivity {
                         "Get Back",
                         "Let It Be",
                         R.drawable.let,
-                        R.raw.twist
+                        3
                 ));
 
 

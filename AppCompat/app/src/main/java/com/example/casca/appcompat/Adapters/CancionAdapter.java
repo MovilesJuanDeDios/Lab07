@@ -50,8 +50,31 @@ public class CancionAdapter extends RecyclerView.Adapter<CancionAdapter.CancionV
         holder.imgPlay.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intentf = new Intent(ctx, Video.class);
-                intentf.putExtra("video", Integer.toString(cancion.getDir()) );
-                ctx.startActivity(intentf);
+                int tipo = cancion.getDir();
+                if(tipo == 1){
+                    intentf.putExtra("youtube", "true" );
+                    intentf.putExtra("video", "https://www.youtube.com/watch?v=9l5L34VqzlU" );
+                    ctx.startActivity(intentf);
+                }
+                else if(tipo == 2){
+                    intentf.putExtra("youtube", "true" );
+                    intentf.putExtra("video", "https://www.youtube.com/watch?v=UelDrZ1aFeY" );
+                    ctx.startActivity(intentf);
+                }
+                else if(tipo == 3){
+                    intentf.putExtra("youtube", "true" );
+                    intentf.putExtra("video", "https://www.youtube.com/watch?v=twZkWHvh154" );
+                    ctx.startActivity(intentf);
+                }
+                else{
+                    intentf.putExtra("youtube", "false" );
+                    intentf.putExtra("video", Integer.toString(tipo) );
+                    ctx.startActivity(intentf);
+                }
+
+
+
+
             }
         });
 
